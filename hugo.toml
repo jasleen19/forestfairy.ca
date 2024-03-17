@@ -1,0 +1,12 @@
+baseURL = 'https://forestfairy.ca/'
+author = 'Jasleen Kaur'
+title = 'Ceramic Products'
+
+copyright = "© [Forest Fairy](https://forestfairy.ca)"
+languageCode = "en-ca"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+ignoreErrors = ["error-remote-getjson"]
+
+sectionPagesMenu = "main"
+
