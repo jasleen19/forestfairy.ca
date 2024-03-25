@@ -50,6 +50,6 @@ title = "FOREST FAIRY"
 
 [module]
   [module.hugoVersion]
-    min = "0.121.2"
+    min = "0.124.1"
   [[module.imports]]
     path = "github.com/nicokaiser/hugo-theme-gallery/v4"
