@@ -1,12 +1,55 @@
-baseURL = 'https://forestfairy.ca/'
-author = 'Jasleen Kaur'
-title = 'Ceramic Products'
-
-copyright = "© [Forest Fairy](https://forestfairy.ca)"
+copyright = "© forestfairy.ca"
+defaultContentLanguage = "en"
+disableKinds = ["taxonomy", "term"]
+enableRobotsTXT = true
 languageCode = "en-ca"
-DefaultContentLanguage = "en"
-enableInlineShortcodes = true
-ignoreErrors = ["error-remote-getjson"]
+timeZone = "America/Vancouver"
+timeout = "120s"
+title = "FOREST FAIRY"
 
-sectionPagesMenu = "main"
+[params]
+  defaultTheme = "dark"
+  description = "Helo"
+  title = "My Gallery"
+  [params.author]
+    email = "forestfairy.ca@gmail.com"
+    name = "Jasleen Kaur"
+  [params.socialIcons]
+    instagram = "https://www.instagram.com/forestfairy.ca"
+    github = "https://github.com/jasleen19/forestfairy.ca"
+    # youtube = "https://www.youtube.com/"
+    email = "mailto:forestfairy.ca@gmail.com"
 
+[outputs]
+  home = ["HTML"]
+  page = ["HTML"]
+  section = ["HTML"]
+
+[imaging]
+  quality = 75
+  resampleFilter = "CatmullRom"
+  [imaging.exif]
+    disableDate = false
+    disableLatLong = true
+    includeFields = "ImageDescription|Orientation"
+
+
+[menu]
+
+  [[menu.main]]
+    identifier = "Buy Now"
+    name = "Buy Now"
+    url = "/buy/"
+    weight = 10
+
+# [menu]
+#   [[menu.footer]]
+#     name = "GitHub"
+#     url = "https://github.com/jasleen19/"
+#     weight = 3
+
+[module]
+  [module.hugoVersion]
+    min = "0.121.2"
+  [[module.imports]]
+    path = "github.com/nicokaiser/hugo-theme-gallery/v4"
